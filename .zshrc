@@ -49,18 +49,18 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
 # # Set `gdircolors` on MacOS
-# if [[ "$(uname)" == "Darwin" ]]
-# then
-#   if ! type gdircolors > /dev/null;
-#   then
-#     brew install coreutils
-#   fi
-#   eval $(gdircolors ~/.dircolors)
-#   alias ls='gls --color=auto'
-#   alias ll='ls -al'
-# else
-#   eval `dircolors ~/.dircolors`
-# fi
+ if [[ "$(uname)" == "Darwin" ]]
+ then
+	 if ! type gdircolors > /dev/null;
+	 then
+		 brew install coreutils
+	 fi
+	 eval $(gdircolors ~/.dircolors)
+	 alias ls='gls --color=auto'
+	 alias ll='ls -al'
+ else
+	 eval `dircolors ~/.dircolors`
+ fi
 
 
 # # Dotfile repository configurations
