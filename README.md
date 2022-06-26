@@ -66,6 +66,7 @@ For moving and editing in Vim
 For Surround in Vim
 * v = visual, e = end, s = surround
 * If start of bracket is used, a space buffer is inserted.
+
 | Function											| Shortcut					|
 | ----------------							| -------------			|
 | Surround with bracket					| `ves}`						|
