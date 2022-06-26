@@ -66,7 +66,8 @@ export LANG=en_US.UTF-8
 # # Dotfile repository configurations
 alias gitpath='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias update="
-  gitpath submodule update --init --recursive &&
+  gitpath submodule update --init --recursive && \
+  vim +PlugUpgrade +PlugInstall +PlugUpdate +qa && \
   omz update
 "
 # # Don't show untracked files during 'config status'
